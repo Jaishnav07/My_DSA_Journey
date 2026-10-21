@@ -78,30 +78,5 @@ class Solution {
 };
 ```
 
-#### Solution 2 (C++)
-
-- **Submitted:** 2026-10-21 16:43:11
-- **Status:** Correct
-- **Marks:** 2
-
-```cpp
-class Solution {
-  public:
-    void bubbleSort(vector<int>& arr) {
-        // code here
-        int n=arr.size();
-        bool swapped=0;
-        for(int i=n-2;i>=0;i--){
-            for(int j=0;j<=i;j++){
-                if(arr[j]>arr[j+1]){
-                    swap(arr[j],arr[j+1]);
-                    swapped=1;
-                }
-            }
-        }
-        
-    }
-};
-```
 
 *Generated on: 10/21/2026, 4:45:55 PM*
