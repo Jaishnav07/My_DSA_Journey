@@ -30,7 +30,7 @@ The problem can be found at the following link: [Question Link](https://www.geek
 
 ```cpp
 // i/p=5,4,3,2,1
-o/p=1,2,3,4,5    //n rounds
+// o/p=1,2,3,4,5    //n rounds
                     //sir ne n-1 rounds karvaye hai but 
                     //i have done n rounds (only for insertion sort) 
 /*round 1= 5|,4,3,2,1
