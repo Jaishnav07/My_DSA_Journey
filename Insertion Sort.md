@@ -29,6 +29,22 @@ The problem can be found at the following link: [Question Link](https://www.geek
 - **Marks:** 2
 
 ```cpp
+// i/p=5,4,3,2,1
+o/p=1,2,3,4,5    //n rounds
+                    //sir ne n-1 rounds karvaye hai but 
+                    //i have done n rounds (only for insertion sort) 
+/*round 1= 5|,4,3,2,1
+round 2= 4,5|,3,2,1
+round 3= 4,3,5,2,1
+         3,4,5|,2,1
+round 4= 3,4,2,5,1
+         3,2,4,5,1
+         2,3,4,5|,1
+round 5= 2,3,4,1,5
+         2,3,1,4,5
+         2,1,3,4,5
+         1,2,3,4,5|
+          */
 class Solution {
   public:
     void insertionSort(vector<int>& arr) {
