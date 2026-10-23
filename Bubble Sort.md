@@ -61,8 +61,9 @@ class Solution {
         // code here
         int n=arr.size();
         bool swapped=0;
-        for(int i=n-2;i>=0;i--){
-            for(int j=0;j<=i;j++){
+        for(int i=n-2;i>=0;i--){  // ek index 0 ke liye and ek last element already sorted
+            for(int j=0;j<=i;j++){   // j<i imp ni toh array dobara unsort hojayega
+                                     // ek ek krke sort hota rahega na aisa last element
                 if(arr[j]>arr[j+1]){
                     swap(arr[j],arr[j+1]);
                     swapped=1;
