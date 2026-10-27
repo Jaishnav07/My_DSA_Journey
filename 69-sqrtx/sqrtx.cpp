@@ -5,7 +5,7 @@ public:
             return x;
         }
         int ans=1;
-        int start=1,end=x-1;
+        int start=0,end=x;
         while(start<=end){
             int mid=start+(end-start)/2;
             if(mid==x/mid){// x== mid*mid hi hai 
