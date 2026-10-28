@@ -4,12 +4,15 @@ public:
         int n=arr.size();
         int start=0,end=n-1,mid;
         while(start<=end){ 
-        mid=end+(start-end)/2;
-        if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
+        mid=start+(end-start)/2;
+        bool leftcheck(mid==0 || arr[mid]>arr[mid-1]);
+        bool rightcheck = (mid == n - 1 || arr[mid] > arr[mid+1]);
+
+        if( leftcheck && rightcheck){
             return mid;
         }
-        else if(arr[mid]>arr[mid-1]){
-            start=mid+1;
+        else if(mid < n-1 && arr[mid]<arr[mid+1]){ 
+                start=mid+1;
             }
         else{
             end=mid-1;
