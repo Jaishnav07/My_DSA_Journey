@@ -8,7 +8,7 @@ public:
             if(nums[mid]==target){
             return mid;
             }
-            else if(nums[mid]>nums[0]){
+            else if(nums[mid]>=nums[0]){
                 if(nums[start]<=target && target<=nums[mid]){
                     end=mid-1;
                 }
@@ -16,9 +16,6 @@ public:
                     start=mid+1;
                 }
             } 
-            else if(mid==0){
-                start=mid+1;
-            }
             else { // nums[mid]<nums[0]
                 if(nums[mid]<=target && target<=nums[end]){
                     start=mid+1;
