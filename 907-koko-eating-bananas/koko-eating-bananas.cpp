@@ -26,7 +26,7 @@ public:
             ans=mid;
             end=mid-1;
         }
-        else{//(time>=h) mtlb usko given time se zyada lag gya usko speed badhani chahie
+        else{//(time>h) mtlb usko given time se zyada lag gya usko speed badhani chahie
         start=mid+1;
         }
      }
